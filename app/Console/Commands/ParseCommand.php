@@ -20,12 +20,12 @@ class ParseCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Parse data from source';
 
     /**
      * Execute the console command.
      */
-    public function handle()
+    public function handle(): void
     {
         dump('Parse started');
 
