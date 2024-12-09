@@ -32,7 +32,7 @@ class ParseCommand extends Command
         $sources = Source::query()->get();
 
         foreach ($sources as $source) {
-            dispatch(new ProcessParse($source));
+            dispatch_sync(new ProcessParse($source));
         }
 
         dump('Parse finished');
